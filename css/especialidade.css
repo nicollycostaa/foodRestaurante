@@ -1,0 +1,115 @@
+.cabecalho{
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  color:#666;
+}
+
+.cabecalho span{
+  color:var(--red);
+}
+
+.especialidades .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+/*Aqui está colocando eles em colunas*/
+.especialidades .box-container .box {
+  flex: 1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.especialidades .box-container .box .image {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  position: absolute;
+  top:-100%; 
+  left:0;/*aqui está escondendo as imagens*/
+}
+
+
+.especialidades .box-container .box .conteudo {
+  text-align: center;
+  background:#fff;
+  padding:2rem;
+}
+
+.especialidades .box-container .conteudo img {
+  margin:1.5rem 0;
+}
+
+.especialidades .box-container .conteudo h3 {
+  font-size: 2.5rem;
+  color:#333;
+}
+
+.especialidades .box-container .box .conteudo p {
+  font-size: 1.6rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+/*aqui da o efeito da imagem aparecer quando passar o mouse*/
+.especialidades .box-container .box:hover .image {
+  top:0;
+}
+
+.especialidades .box-container .box:hover .conteudo {
+  transform: translateY(100%);
+}
+
+.popular .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  1.5rem;
+}
+
+.popular .box-container .box {
+  padding: 2rem;
+  background: #fff;
+  box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+  border: .1rem solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  position: relative;
+}
+
+/*aqui que está deixando as imagens uma do lado da outra*/
+.popular .box-container .box img {
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;
+  border: .5rem;
+}
+
+.popular .box-container .box .preco {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background: var(--red);
+  color: #fff;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.popular .box-container .box h3 {
+  color: #333;
+  font-size: 2.5rem;
+  padding-top:1rem ;
+}
+
+.popular .box-container .box .estrelas i {
+  color: gold;
+  font-size: 1.7rem;
+  padding: 1rem .1rem;
+}
